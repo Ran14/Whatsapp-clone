@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/ivLogin"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/login_photo" />
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivLogin"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="17dp"
+        android:background="@drawable/input"
+        android:drawableStart="@drawable/email"
+        android:hint="Email..."
+        android:inputType="textEmailAddress"
+        android:padding="4dp" />
+
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etEmail"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="17dp"
+        android:background="@drawable/input"
+        android:drawableStart="@drawable/pass"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="4dp" />
+
+    <TextView
+        android:id="@+id/tv_forget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPass"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="19dp"
+        android:text="Forget Password"
+        android:textAlignment="textEnd"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_forget"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="17dp"
+        android:background="@drawable/buttons"
+        android:padding="4dp"
+        android:text="Login"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/tv_needacc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginRight="23dp"
+        android:gravity="center"
+        android:text="Need New account"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tv_loginUsing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_needacc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="23dp"
+        android:gravity="center"
+        android:text="Or Login Using your"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/btn_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_loginUsing"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="17dp"
+        android:background="@drawable/buttons"
+        android:padding="4dp"
+        android:text="Phone"
+        android:drawableStart="@drawable/phone"
+        android:textColor="@android:color/background_light" />
+
+
+
+</RelativeLayout>
